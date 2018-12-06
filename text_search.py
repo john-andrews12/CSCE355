@@ -64,7 +64,7 @@ def generate_output(word):
 	output = "Number of states: " + str(num_states) + "\nAccepting states: " + str(last_state) + "\nAlphabet: " + alphabet + "\n"
 	
 	for x in transitions:
-		for y in x:
+		for y in alphabet:
 			output += str(x[y]) + " "
 		output = output[:-1]#remove the last space
 		output += '\n'
